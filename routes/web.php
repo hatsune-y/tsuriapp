@@ -25,3 +25,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user/index', 'UserController@index') -> name('user.index');
 Route::get('/user/edit', 'UserController@edit') -> name('user.edit');
 Route::post('/user/edit', 'UserController@update') -> name('user.edit');
+
+Route::get('/choka', 'ChokaController@index');
+Route::get('/choka/create', 'ChokaController@create') -> name('choka.create');
+Route::post('/choka/create', 'ChokaController@store') -> name('choka.create');
+
+
