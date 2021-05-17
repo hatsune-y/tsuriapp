@@ -9,6 +9,6 @@ class Choka extends Model
     protected $table = 'choka';
     
     protected $fillable = [
-        'id', 'title'
+        'id', 'title', 'date', 'spot', 'fish', 'comment'
     ];
 }

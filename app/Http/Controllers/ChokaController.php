@@ -55,7 +55,9 @@ class ChokaController extends Controller
      */
     public function show($id)
     {
-        //
+        $choka = Choka::find($id);
+
+        return view('choka.show', ['choka' =>  $choka]);
     }
 
     /**

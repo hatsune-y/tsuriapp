@@ -30,4 +30,7 @@ Route::get('/choka', 'ChokaController@index');
 Route::get('/choka/create', 'ChokaController@create') -> name('choka.create');
 Route::post('/choka/create', 'ChokaController@store') -> name('choka.create');
 
+Route::get('/choka/{id}', 'ChokaController@show') -> name('choka.show');
+
+
 
